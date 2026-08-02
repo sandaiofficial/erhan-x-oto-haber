@@ -1,0 +1,58 @@
+name: Otomatik Haber Paylaşımı
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-news
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Depoyu indir
+        uses: actions/checkout@v5
+
+      - name: Node.js kur
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          package-manager-cache: false
+
+      - name: Bağımlılıkları yükle
+        run: npm install --no-audit --no-fund
+
+      - name: Kod kontrolü
+        run: npm run check && npm test
+
+      - name: Haberleri tara ve paylaş
+        run: npm start
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+          MAX_POSTS_PER_RUN: ${{ vars.MAX_POSTS_PER_RUN || '2' }}
+          INCLUDE_SOURCE_LINK: ${{ vars.INCLUDE_SOURCE_LINK || 'false' }}
+          SOURCE_NAMES: ${{ vars.SOURCE_NAMES }}
+
+      - name: Tekrar kontrolü verisini kaydet
+        run: |
+          if git diff --quiet -- data/seen.json; then
+            echo "Kaydedilecek yeni durum yok."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seen.json
+          git commit -m "Haber tekrar kontrolü verisini güncelle"
+          git push
