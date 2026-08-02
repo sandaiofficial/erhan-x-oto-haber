@@ -45,67 +45,18 @@ jobs:
           INCLUDE_SOURCE_LINK: ${{ vars.INCLUDE_SOURCE_LINK || 'false' }}
           SOURCE_NAMES: ${{ vars.SOURCE_NAMES }}
 
-            - name: Tekrar kontrolü verisini kaydet
+      - name: Tekrar kontrolü verisini kaydet
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          for attempt in 1 2 3; do
-            cp data/seen.json /tmp/local-seen.json
+          git pull --rebase --autostash origin main
 
-            git fetch origin main
-            git reset --hard origin/main
+          if git diff --quiet -- data/seen.json; then
+            echo "Kaydedilecek yeni durum yok."
+            exit 0
+          fi
 
-            node --input-type=module <<'NODE'
-          import fs from "node:fs";
-
-          const remoteState = JSON.parse(
-            fs.readFileSync("data/seen.json", "utf8")
-          );
-
-          const localState = JSON.parse(
-            fs.readFileSync("/tmp/local-seen.json", "utf8")
-          );
-
-          const mergedState = {
-            initialized: Boolean(
-              remoteState.initialized || localState.initialized
-            ),
-            seenUrls: [
-              ...new Set([
-                ...(remoteState.seenUrls || []),
-                ...(localState.seenUrls || [])
-              ])
-            ],
-            seenTexts: [
-              ...new Set([
-                ...(remoteState.seenTexts || []),
-                ...(localState.seenTexts || [])
-              ])
-            ]
-          };
-
-          fs.writeFileSync(
-            "data/seen.json",
-            JSON.stringify(mergedState, null, 2) + "\n"
-          );
-          NODE
-
-            if git diff --quiet -- data/seen.json; then
-              echo "Kaydedilecek yeni durum yok."
-              exit 0
-            fi
-
-            git add data/seen.json
-            git commit -m "Haber tekrar kontrolü verisini güncelle"
-
-            if git push origin HEAD:main; then
-              echo "Durum verisi başarıyla kaydedildi."
-              exit 0
-            fi
-
-            echo "Push çakıştı. Yeniden deneniyor: $attempt/3"
-          done
-
-          echo "Durum verisi üç denemede kaydedilemedi."
-          exit 1
+          git add data/seen.json
+          git commit -m "Haber tekrar kontrolü verisini güncelle"
+          git push origin HEAD:main
