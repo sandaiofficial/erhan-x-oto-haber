@@ -1,15 +1,6 @@
 {
   "initialized": true,
   "seenUrls": [
-    "https://www.ntv.com.tr/teknoloji/googlein-yapay-zekasina-turk-yonetici-1736122",
-    "https://www.ntv.com.tr/turkiye/video-bursada-alkollu-kadin-surucu-karistigi-kazayi-unuttu-1736137",
-    "https://www.ntv.com.tr/yerel-haberler/adana/caldigi-motosikletle-tur-atarken-yakalandi-1736157",
-    "https://www.ntv.com.tr/resmi-ilanlar/tc-isparta-3-sulh-hukuk-mah-satis-memurlugu-1736017",
-    "https://www.ntv.com.tr/resmi-ilanlar/tc-istanbul-43-asliye-hukuk-mahkemesi-1736016",
-    "https://www.ntv.com.tr/resmi-ilanlar/tc-samsun-2-tuketici-mahkemesinden-1736015",
-    "https://www.ntv.com.tr/resmi-ilanlar/tc-antalya-gayrimenkul-satis-icra-dairesi-1736014",
-    "https://www.cnnturk.com/turkiye/terorsuz-turkiye-yasasi-9-soru-9-cevap-ahmet-hakan-hic-kimseye-ozel-statu-taninmiyor-3450885",
-    "https://www.cnnturk.com/spor/futbol/ulke-puaninda-son-durum-belli-oldu-3450908",
     "https://www.cnnturk.com/egitim/ilk-yuzde-5in-tercihi-fen-lisesi-iste-lgs-puanina-gore-yapilan-tercihler-3450925",
     "https://www.cnnturk.com/turkiye/yeni-duzenleme-yolda-cocuklarin-verileri-dijital-riza-yasi-ile-korunacak-3450912",
     "https://www.cnnturk.com/yazarlar/guncel/benan-topbas/venus-terazide-ask-estetik-ve-iliskilerde-yeni-denge-donemi-basliyor-3450881",
@@ -5000,7 +4991,16 @@
     "https://www.iha.com.tr/bolu-haberleri/cip-bolu-dagi-tuneli-girisinde-alev-topuna-dondu-470684477",
     "https://www.dha.com.tr/gundem/turkiye-ve-7-ulkeden-israile-tepki-2928265",
     "https://www.dha.com.tr/gundem/alanyada-esini-bicaklayip-binanin-catisinda-intihar-girisiminde-bulundu-2928246",
-    "https://www.cnnturk.com/spor/futbol/live-amedspor-erzurumspor-fk-maci-canli-anlatim-ligin-yeni-ekipleri-karsilasiyor-3455301"
+    "https://www.cnnturk.com/spor/futbol/live-amedspor-erzurumspor-fk-maci-canli-anlatim-ligin-yeni-ekipleri-karsilasiyor-3455301",
+    "https://www.aa.com.tr/tr/vg/video-galeri/jandarma-motosikletli-akrobasi-timi-tulpar-ustun-surus-becerileri-ve-profesyonelligi-ayni-cizgide-bulusturuyor/154122",
+    "https://www.aa.com.tr/tr/vg/video-galeri/turk-hava-kuvvetleri-ucaklari-romanyadaki-nato-entegre-hava-ve-fuze-savunmasi-faaliyetine-katildi/154120",
+    "https://www.iha.com.tr/erzincan-haberleri/saganak-sonrasi-toprak-kaymasi-erzincan-sivas-yolu-kapandi-470690797",
+    "https://www.iha.com.tr/artvin-haberleri/13-yasindaki-asya-yamac-parasutu-ile-gokyuzunde-ukulele-calip-sarki-soyledi-470662659",
+    "https://www.dha.com.tr/gundem/silede-denize-giren-5-kisi-bogulma-tehlikesi-gecirdi-1-kisi-araniyor-2928267",
+    "https://www.dha.com.tr/gundem/antalyada-yuksek-nem-bunaltti-2928153",
+    "https://www.ntv.com.tr/sporskor/besiktas-taraftari-onunde-sahaya-cikiyor-ilk-11ler-belli-oldu-1737614",
+    "https://www.cnnturk.com/spor/futbol/live-besiktas-eyupspor-maci-canli-anlatim-kartal-sezonu-aciyor-3455189",
+    "https://www.cnnturk.com/turkiye/turkiye-ve-7-ulkeden-israile-tepki-3455302"
   ],
   "seenTexts": [
     "değerli metallerde dolar ve tahvil faizlerindeki hareketler ile fed in para politikasına ilişkin değişen beklentiler belirleyici oldu",
