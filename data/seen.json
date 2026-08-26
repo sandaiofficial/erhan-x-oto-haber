@@ -1,17 +1,6 @@
 {
   "initialized": true,
   "seenUrls": [
-    "https://www.iha.com.tr/adana-haberleri/adanada-saganak-ve-kuvvetli-ruzgar-hayati-olumsuz-etkiledi-cati-sokaga-dustu-470567290",
-    "https://www.dha.com.tr/gundem/damadinin-evini-bastigi-iddiasiyla-gozaltina-alinan-ilce-baskani-serbest-birakildi-2928161",
-    "https://www.ntv.com.tr/yerel-haberler/galeri-kadir-komiser-yalanina-25-milyon-lirasini-kaptirdi-gercegi-is-isten-gectikten-sonra-fark-ettim-1737593",
-    "https://www.ntv.com.tr/turkiye/video-ntv-ekibi-deprem-batigina-daldi-degirmendere-sahili-denize-suruklendi-1737590",
-    "https://www.cnnturk.com/turkiye/kuzey-marmara-otoyolunda-feci-kaza-1i-cocuk-3-can-kaybi-3455208",
-    "https://www.trthaber.com/haber/dunya/endonezyada-77-buyuklugundeki-depremde-olu-sayisi-51e-yukseldi-954087.html",
-    "https://www.trthaber.com/haber/gundem/cocugun-formasini-cikarttiran-zanli-gozaltina-alindi-954063.html",
-    "https://www.dha.com.tr/gundem/kuzey-marmara-otoyolu-uskumrukoyde-kamyonla-otomobil-carpisti-1i-cocuk-3-olu-5-yarali-2928135",
-    "https://www.dha.com.tr/dunya/irandan-katarin-esir-pilot-yalanlamasina-tepki-arastirma-heyetimize-izin-verin-2928171",
-    "https://www.dha.com.tr/spor/kitalararasi-triatlon-yarisi-beykozda-yapildi-video-2928175",
-    "https://www.ntv.com.tr/sporskor/galeri-genclerbirligi-deplasmanindaki-cirkin-olay-sonrasi-fenerbahce-harekete-gecti-1737606",
     "https://www.ntv.com.tr/gundem/ayni-ailede-ikinci-aci-sivasta-kene-yine-can-aldi-1737608",
     "https://www.ntv.com.tr/ntvpara/vergiye-gonullu-uyuma-sms-ile-tesvik-bakan-simsekten-aciklama-1737610",
     "https://www.cnnturk.com/spor/futbol/fenerbahce-lyon-maci-hazirliklarina-basladi-3455210",
@@ -5000,7 +4989,18 @@
     "https://www.cnnturk.com/turkiye/cumhurbaskani-erdogandan-malazgirt-zaferi-mesaji-3459214",
     "https://www.cnnturk.com/ekonomi/turkiye-abnin-en-fazla-ithalat-ve-ihracat-yaptigi-5inci-ulke-oldu-3459217",
     "https://www.cnnturk.com/spor/futbol/uefa-sampiyonlar-liginde-kuralar-cekiliyor-3459211",
-    "https://www.cnnturk.com/tv-cnn-turk/belgeseller/vizor/vahsetin-adresi-farkli-fail-ayni-israil-filistinde-israil-terorizminin-stratejik-plani-e-1-3459221"
+    "https://www.cnnturk.com/tv-cnn-turk/belgeseller/vizor/vahsetin-adresi-farkli-fail-ayni-israil-filistinde-israil-terorizminin-stratejik-plani-e-1-3459221",
+    "https://www.trthaber.com/haber/gundem/cumhurbaskani-erdogandan-buyuk-taarruzun-104uncu-yil-donumu-paylasimi-954990.html",
+    "https://www.trthaber.com/haber/dunya/kremlin-rusya-ve-abd-ozel-servisleri-arasinda-temaslar-gerceklesti-954989.html",
+    "https://www.iha.com.tr/antalya-haberleri/antalyada-son-kullanma-tarihi-bulunmayan-ve-suresi-gecmis-152-kilo-et-ile-20-bidon-tursuya-el-konuldu-475551258",
+    "https://www.dha.com.tr/politika/cumhurbaskani-erdogandan-buyuk-taarruzun-yil-donumu-mesaji-2933652",
+    "https://www.dha.com.tr/politika/omer-celik-suriyenin-ve-komsu-ulkelerin-istikrari-guvenligi-refahi-icin-atilan-her-adimi-desteklemeye-devam-edecegiz-2933681",
+    "https://www.dha.com.tr/spor/tffden-turkiye-kupasinda-kadro-duzenlemesi-2933676",
+    "https://www.dha.com.tr/politika/kocatepede-zafer-coskusu-2933668",
+    "https://www.ntv.com.tr/turkiye/galeri-ankara-sdgnin-feshedilmesine-nasil-bakiyor-1739007",
+    "https://www.ntv.com.tr/dunya/galeri-tarihi-ada-satisa-cikarildi-1739013",
+    "https://www.ntv.com.tr/dunya/galeri-unlu-milyarder-luks-mekan-acti-mahalleliyle-davalik-oldu-1738984",
+    "https://www.cnnturk.com/ekonomi/tmodan-findik-ureticilerine-kritik-uyari-3459235"
   ],
   "seenTexts": [
     "değerli metallerde dolar ve tahvil faizlerindeki hareketler ile fed in para politikasına ilişkin değişen beklentiler belirleyici oldu",
